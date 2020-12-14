@@ -2,7 +2,7 @@
 node_modules/
 
 # Personal Config
-config/settings.json
+#config/settings.json
 
 # Old files
 *.old
