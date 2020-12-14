@@ -1,6 +1,6 @@
 const logger = require('@greencoast/logger');
 const fs = require('fs');
-const track = 39 // number of audio files
+const track = 57 // number of audio files
 
 module.exports = {
     name: 'play',
