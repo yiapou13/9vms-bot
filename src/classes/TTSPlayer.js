@@ -4,7 +4,7 @@ const logger = require('@greencoast/logger');
 const dispatcherEvents = require('../events/dispatcherEvents');
 const languages = require('../../data/languages.json');
 const { TTS_ENGINES, AEIOU_API_URL } = require('../common/constants');
-const prefix = process.env.PREFIX || require('../../config/settings.json').prefix;
+const prefix = process.env.PREFIX || require('../../settings.json').prefix;
 
 class TTSPlayer {
   constructor(guild) {
