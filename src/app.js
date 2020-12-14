@@ -1,7 +1,7 @@
 const { Client, Collection, Structures } = require('discord.js');
 const fs = require('fs-extra');
 const path = require('path');
-const discordToken = process.env.DISCORD_TOKEN || require('../config/settings.json').discord_token;
+const discordToken = process.env.DISCORD_TOKEN || require('../settings.json').discord_token;
 const appEvents = require('./events/appEvents');
 const appHandlers = require('./events/handlers/app');
 const { TTSGuild } = require('./classes/extensions');
