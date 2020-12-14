@@ -1,6 +1,6 @@
 const logger = require('@greencoast/logger');
 const TTSPlayer = require('../../classes/TTSPlayer');
-const prefix = process.env.PREFIX || require('../../../config/settings.json').prefix;
+const prefix = process.env.PREFIX || require('../../../settings.json').prefix;
 const { updatePresence, executeCommand } = require('../../common/utils');
 
 const handleDebug = (info) => {
