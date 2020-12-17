@@ -10,9 +10,13 @@ module.exports = {
         const connection = voice ? voice.connection : null;
         const atLeastOneWord = options.args;
 
-        let channel = message.guild.channels.cache.get(c => c.name === 'bot-channel')
+        //const channel = message.guild.channels.cache.get(c => c.name === 'bot-channel')
+        const channel = message.guild.channels.find(ch => ch.name === 'bot-channel');
 
-        channel.send("-play");
+        channel.send(`-play`);
+
+        //channel.send("-play");
+        //761907315620184086
 
         message.delete();
         return;
