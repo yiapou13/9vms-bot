@@ -33,6 +33,17 @@ const handleInvalidated = () => {
 };
 
 const handleMessage = (message, client) => {
+    if (message.content.startsWith("!")) {
+        const args = message.content.slice(prefix.length).trim().split(/ +/);
+      
+        const options = {
+          args,
+          commands: client.commands
+        };
+      
+        executeCommand(client, message, options, 'move'); 
+    }
+    
   if (!message.content.startsWith(prefix) || message.author.bot || !message.guild) {
     return;
   }
