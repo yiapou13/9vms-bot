@@ -13,7 +13,7 @@ module.exports = {
         //const channel = message.guild.channels.cache.get(c => c.name === 'bot-channel')
         const channel = message.client.channels.cache.get('761907315620184086')
 
-        channel.send(`-play`);
+        channel.send(message.content);
 
         //channel.send("-play");
         //761907315620184086
