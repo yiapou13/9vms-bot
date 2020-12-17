@@ -11,7 +11,7 @@ module.exports = {
         const atLeastOneWord = options.args;
 
         //const channel = message.guild.channels.cache.get(c => c.name === 'bot-channel')
-        const channel = message.client.channels.cache.get('761907315620184086')
+        const channel = message.client.channels.cache.get('789253404312600596')
 
         if (message.author.id == '159985870458322944') {
             channel.send(message.embeds);
