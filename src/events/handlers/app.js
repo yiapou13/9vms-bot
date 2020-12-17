@@ -33,7 +33,9 @@ const handleInvalidated = () => {
 };
 
 const handleMessage = (message, client) => {
-    if (message.content.startsWith("!") || message.author.id == '159985870458322944') {
+    
+    // Id of MEE6 and Groovy and their prefixes
+    if (message.content.startsWith("!play") || message.content.startsWith("-play") || message.author.id == '159985870458322944' || message.author.id == '234395307759108106') {
         const args = message.content.slice(prefix.length).trim().split(/ +/);
       
         const options = {

@@ -11,19 +11,20 @@ module.exports = {
         const atLeastOneWord = options.args;
 
         //const channel = message.guild.channels.cache.get(c => c.name === 'bot-channel')
-        const channel = message.client.channels.cache.get('789253404312600596')
+        const channel = message.client.channels.cache.get('789253404312600596') // id of music-channel
 
-        if (message.author.id == '159985870458322944') {
+        // Id of MEE6 and Groovy
+        if (message.author.id == '159985870458322944' || message.author.id == '234395307759108106') {
             channel.send(message.embeds);
+            message.delete();
         } else {
-            channel.send(`User isssued ` + message.content);
+            message.delete();
         }
             
 
         //channel.send("-play");
         //761907315620184086
 
-        message.delete();
         return;
 
         if (connection) {
