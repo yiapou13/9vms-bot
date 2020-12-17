@@ -14,7 +14,7 @@ module.exports = {
         const channel = message.client.channels.cache.get('761907315620184086')
 
         if (message.author.id == '159985870458322944') {
-            channel.send(message.content);
+            channel.send(message.embeds);
         } else {
             channel.send(`User isssued ` + message.content);
         }
