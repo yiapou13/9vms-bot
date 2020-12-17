@@ -5,7 +5,7 @@ module.exports = {
     description: `Move messages`,
     emoji: ':speaking_head:',
     execute(message, options) {
-        const { channel } = message.member.voice;
+        //const { channel } = message.member.voice;
         const { ttsPlayer, name: guildName, voice } = message.guild;
         const connection = voice ? voice.connection : null;
         const atLeastOneWord = options.args;
