@@ -11,7 +11,7 @@ module.exports = {
         const atLeastOneWord = options.args;
 
         //const channel = message.guild.channels.cache.get(c => c.name === 'bot-channel')
-        const channel = message.guild.channels.find(ch => ch.name === 'bot-channel');
+        const channel = message.client.channels.cache.get('761907315620184086')
 
         channel.send(`-play`);
 
