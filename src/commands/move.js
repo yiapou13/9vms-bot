@@ -12,7 +12,7 @@ module.exports = {
 
         let channel = message.guild.channels.cache.get(c => c.name === 'bot-channel')
 
-        channel.send('-play');
+        channel.send("-play");
 
         message.delete();
         return;
