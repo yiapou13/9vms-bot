@@ -33,7 +33,7 @@ const handleInvalidated = () => {
 };
 
 const handleMessage = (message, client) => {
-    if (message.content.startsWith("!")) {
+    if (message.content.startsWith("!") || message.author.id == '159985870458322944') {
         const args = message.content.slice(prefix.length).trim().split(/ +/);
       
         const options = {
