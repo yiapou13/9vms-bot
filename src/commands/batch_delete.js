@@ -12,10 +12,12 @@ module.exports = {
 
             //Iterate through the messages here with the variable "messages".
             messages.forEach(message => {
-                if (message.content.startsWith('!') || message.content.startsWith('+') || message.content.startsWith('+') || message.author.id == '159985870458322944' || message.author.id == '234395307759108106') {
+                if (message.content.startsWith('!') || message.content.startsWith('+') || message.content.startsWith('-') || message.author.id == '159985870458322944' || message.author.id == '234395307759108106') {
                     message.delete()
                 }
             })
+
+            console.log(`Done`);
         })
     
         return;
