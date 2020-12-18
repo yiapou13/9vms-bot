@@ -26,7 +26,7 @@ module.exports = {
         // Play random track
         let clip = Math.floor(Math.random() * track);
 
-        if ((atLeastOneWord.length == '1' && parseInt(atLeastOneWord[0]) <= (track - 1) && parseInt(atLeastOneWord[0]) >= 0) || parseInt(atLeastOneWord[0]) === 666) {
+        if ((atLeastOneWord.length == '1' && parseInt(atLeastOneWord[0]) <= (track - 1) && parseInt(atLeastOneWord[0]) >= 0) || parseInt(atLeastOneWord[0]) === 666 || parseInt(atLeastOneWord[0]) === 420) {
             clip = atLeastOneWord;
         }
 
