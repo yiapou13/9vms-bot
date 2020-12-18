@@ -1,4 +1,4 @@
-const logger = require('@greencoast/logger');
+/* const logger = require('@greencoast/logger');
 
 module.exports = {
     name: 'delete',
@@ -22,4 +22,4 @@ module.exports = {
     
         return;
     }
-}
+} */
