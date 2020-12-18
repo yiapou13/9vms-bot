@@ -10,18 +10,14 @@ module.exports = {
         // Id of MEE6 and Groovy
         if (message.author.id == '159985870458322944' || message.author.id == '234395307759108106') {
             channel.send(message.embeds)
-                .then((response) => {
-                    logger.info(response);
-                })
+                .then(console.log(`Embed from other bots moved successfully`))
                 .catch((error) => {
                     throw error;
                 });
         }
 
         message.delete()
-            .then((response) => {
-                logger.info(response);
-            })
+            .then(console.log(`Message deleted successfully`))
             .catch((error) => {
                 throw error;
             });
