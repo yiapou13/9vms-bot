@@ -9,9 +9,13 @@ module.exports = {
 
         channel.messages.fetch({ limit: 100 }).then(messages => {
             console.log(`Received ${messages.size} messages`);
-            
+
             //Iterate through the messages here with the variable "messages".
-            messages.forEach(message => console.log(message.content))
+            messages.forEach(message => {
+                if (message.content.startsWith('!')) {
+                    message.delete()
+                }
+            })
         })
     
         return;
