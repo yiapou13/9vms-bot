@@ -1,7 +1,7 @@
 const logger = require('@greencoast/logger');
 
 module.exports = {
-    name: 'help',
+    name: 'manual',
     description: `Prints documentation in rio-bot-manual text channel`,
     emoji: ':speaking_head:',
     execute(message, options) {
