@@ -13,7 +13,7 @@ module.exports = {
               name: "RIO Bot manual",
               icon_url: message.client.user.avatarURL()
             },
-            title: "One and only command (more to come soon): +play #",
+            title: ":zap: One and only command (more to come soon) :zap:```\n+play #```",
             fields: [{
                 name: "Rio audio clips",
                 value: "\u200B"
