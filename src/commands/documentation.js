@@ -16,7 +16,7 @@ module.exports = {
             title: "Πατώντας **+play #** παίζει το αντίστοιχο audio clip\nπ.χ. +play 1 παίζει \"Δεν πίνεις ούτε το 1/78\"",
             fields: [{
                 name: "Rio audio clips",
-                value: ""
+                value: "more to come soon!"
               },
               {
                 name: "0-10",
