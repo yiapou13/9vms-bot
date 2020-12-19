@@ -13,15 +13,14 @@ module.exports = {
               name: "RIO Bot manual",
               icon_url: message.client.user.avatarURL()
             },
-            title: "One and only command (more to come soon)",
-            description: "+play #",
+            title: "One and only command (more to come soon): +play #",
             fields: [{
                 name: "Rio audio clips",
                 value: "\u200B"
               },
               {
                 name: "#",
-                value: "0\n1\n2\n3\n\n4\n5 :musical_note:\n6 :musical_note:\n7 :musical_note:\n8\n9",
+                value: "0\n1\n2\n3\n\n4\n5 ♫\n6 ♫\n7 ♫\n8\n9",
                 inline: true
               },
               {
@@ -35,12 +34,12 @@ module.exports = {
               },
               {
                 name: "#",
-                value: "10\n11\n12 :musical_note:\n13\n14 :musical_note:\n15\n16\n17\n18\n19 :musical_note:",
+                value: "10\n11\n12 ♫\n13\n14 ♫\n15\n16\n17\n18\n19 ♫",
                 inline: true
               },
               {
                 name: "Description",
-                value: "Θέλω να μπω μέσα σου.\nΤο 'χω βράσει και το έχω σκάσει εδώ και 5 λεπτά, σε περιμένω.\n♫ Στρίφτη μου χαδιάρη - extended cut by ρίο\nΠες αλήθεια τώρα, mauce ή billpap;\nΣκάστους τα, πιες τους τα, στρίφτους τα.\nΕ, μόνο για πάνω απο 15 g μιλάω εγώ να ξες.\nΌπου πάω με ρωτάνε πόσο πάει το γραμμάριο.\nΌπου πάω με ρωτάνε πόσο πάει το γραμμάριο.\nΚαυτερά λουκάνικα - extended cut by ρίο.\nΘέλω να με βράσεις, να μη μου το σκάσεις, θέλω να σε βράζω να σε πίνω να σε σκάω.",
+                value: "Θέλω να μπω μέσα σου.\nΤο 'χω βράσει και το έχω σκάσει εδώ και 5 λεπτά, σε περιμένω.\nΣτρίφτη μου χαδιάρη - extended cut by ρίο\nΠες αλήθεια τώρα, mauce ή billpap;\nΣκάστους τα, πιες τους τα, στρίφτους τα.\nΕ, μόνο για πάνω απο 15 g μιλάω εγώ να ξες.\nΌπου πάω με ρωτάνε πόσο πάει το γραμμάριο.\nΌπου πάω με ρωτάνε πόσο πάει το γραμμάριο.\nΚαυτερά λουκάνικα - extended cut by ρίο.\nΘέλω να με βράσεις, να μη μου το σκάσεις, θέλω να σε βράζω να σε πίνω να σε σκάω.",
                 inline: true
               },
               {
@@ -63,7 +62,7 @@ module.exports = {
               },
               {
                 name: "#",
-                value: "30\n31 :musical_note:\n\n\n32 :musical_note:\n\n33\n34\n35\n36\n37\n38\n39",
+                value: "30\n31 ♫\n\n\n32 ♫\n\n33\n34\n35\n36\n37\n38\n39",
                 inline: true
               },
               {
@@ -77,7 +76,7 @@ module.exports = {
               },
               {
                 name: "#",
-                value: "40\n41\n42\n43\n44\n45\n46 :musical_note:\n47\n48\n49",
+                value: "40\n41\n42\n43\n44\n45\n46 ♫\n47\n48\n49",
                 inline: true
               },
               {
@@ -100,12 +99,12 @@ module.exports = {
                 inline: true
               },
               {
-                name: "Extra audi clips",
+                name: "Extra audio clips",
                 value: "\u200B"
               },
               {
                 name: "#",
-                value: "420 :musical_note:\n666",
+                value: "420 ♫\n666",
                 inline: true
               },
               {
@@ -117,7 +116,7 @@ module.exports = {
             timestamp: new Date(),
             footer: {
               icon_url: message.client.user.avatarURL(),
-              text: "© 9VMS"
+              text: "© 9VMS | Last update"
             }
           }
         });
