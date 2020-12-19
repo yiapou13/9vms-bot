@@ -29,9 +29,13 @@ module.exports = {
                 inline: true
               },
               {
+                name: "\u200B",
+                value: "\u200B"
+              },
+              {
                 name: "0-9",
                 value: "0\n1\n2\n3\n\n4\n5\n6\n7\n8\n9",
-                inline: false
+                inline: true
               },
               {
                 name: "Description",
