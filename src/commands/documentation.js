@@ -11,7 +11,7 @@ module.exports = {
             color: 16711935,
             author: {
               name: "RIO Bot manual",
-              icon_url: client.user.avatarURL()
+              icon_url: message.client.user.avatarURL()
             },
             title: "Πατώντας **+play #** παίζει το αντίστοιχο audio clip\nπ.χ. +play 1 παίζει \"Δεν πίνεις ούτε το 1/78\"",
             fields: [{
@@ -29,7 +29,7 @@ module.exports = {
             ],
             timestamp: new Date(),
             footer: {
-              icon_url: client.user.avatarURL(),
+              icon_url: message.client.user.avatarURL(),
               text: "© 9VMS"
             }
           }
