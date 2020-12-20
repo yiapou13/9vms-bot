@@ -14,7 +14,7 @@ module.exports = {
               icon_url: message.client.user.avatarURL()
             },
             title: ":zap: One and only command (more to come soon) :zap:",
-            description: "```+play #```",
+            description: "```+play #```\nOmitting the number will play a random rio clip",
             fields: [{
                 name: "Rio audio clips",
                 value: "\u200B"
@@ -40,7 +40,7 @@ module.exports = {
               },
               {
                 name: "Description",
-                value: "Θέλω να μπω μέσα σου.\nΤο 'χω βράσει και το έχω σκάσει εδώ και 5 λεπτά, σε περιμένω.\nΣτρίφτη μου χαδιάρη - extended cut by ρίο\nΠες αλήθεια τώρα, mauce ή billpap;\nΣκάστους τα, πιες τους τα, στρίφτους τα.\nΕ, μόνο για πάνω απο 15 g μιλάω εγώ να ξες.\nΌπου πάω με ρωτάνε πόσο πάει το γραμμάριο.\nΌπου πάω με ρωτάνε πόσο πάει το γραμμάριο.\nΚαυτερά λουκάνικα - extended cut by ρίο.\nΘέλω να με βράσεις, να μη μου το σκάσεις, θέλω να σε βράζω να σε πίνω να σε σκάω.",
+                value: "Θέλω να μπω μέσα σου.\nΤο 'χω βράσει και το έχω σκάσει εδώ και 5 λεπτά, σε περιμένω.\nΣτρίφτη μου χαδιάρη - extended cut by ρίο\nΠες αλήθεια τώρα, mauce ή billpap;\nΣκάστους τα, πιες τους τα, στρίφτους τα.\nΕ, μόνο για πάνω απο 15 g μιλάω εγώ να ξες.\nΌπου πάω με ρωτάνε πόσο πάει το γραμμάριο.\nΜιλάμε τώρα ή βράζουμε, τι γίνεται;\nΚαυτερά λουκάνικα - extended cut by ρίο.\nΘέλω να με βράσεις, να μη μου το σκάσεις, θέλω να σε βράζω να σε πίνω να σε σκάω.",
                 inline: true
               },
               {
@@ -91,12 +91,26 @@ module.exports = {
               },
               {
                 name: "#",
-                value: "50\n51\n52\n53\n54\n55\n56",
+                value: "50\n51\n52\n53\n54\n55\n56\n57 ♫\n58 ♫\n59 ♫",
                 inline: true
               },
               {
                 name: "Description",
-                value: "Ντρούμπου.\nΙππότη του Melliot.\nMelliot.\nΜέλι.\nΠούσαι ρε Νικίτα του πούτσου.\nAngie μωράκι μου.\nΝτάξει ρε, πίνετε χωρίς εμένα, ντάξει.",
+                value: "Ντρούμπου.\nΙππότη του Melliot.\nMelliot.\nΜέλι.\nΠούσαι ρε Νικίτα του πούτσου.\nAngie μωράκι μου.\nΝτάξει ρε, πίνετε χωρίς εμένα, ντάξει.\nΗρακλής - cover by ρίο Ver.1\nΗρακλής - cover by ρίο Ver.2\nΗρακλής - cover by ρίο Ver.3",
+                inline: true
+              },
+              {
+                name: "\u200B",
+                value: "\u200B"
+              },
+              {
+                name: "#",
+                value: "60\n61\n62\n63\n64\n65\n66\n67 ♫\n68\n69",
+                inline: true
+              },
+              {
+                name: "Description",
+                value: "Τον ναρκομανάκη τι τον έχεις;\nΤι θα πας να δεις τον ναρκομανάκη μήπως ρε;\nTrinkst du hasch; Trinken, trinken oder getrunken;\nΓκαγκάγαγα.\nΟδηγάω μεθυσμένος - extended cut by ριο Ver.1\nΟδηγάω μεθυσμένος - extended cut by ριο Ver.2\nΜόσδης σόους.\nΨάξε, ψάξε δε θα το πιείς, το χασίσι που ποθείς.\n Σαράντα κιλά μηλίτη τώρα.\nΓια πόσα g μιλάμε;",
                 inline: true
               },
               {
