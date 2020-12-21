@@ -9,7 +9,7 @@ module.exports = {
 
         // Id of MEE6 and Groovy
         if (message.author.id == '159985870458322944' || message.author.id == '234395307759108106') {
-            if (message.embeds.description.includes("https://groovy.bot/premium")) {
+            /* if (message.embeds.description.includes("https://groovy.bot/premium")) {
                 message.delete()
                 .then(console.log(`Groovy inactivity message deleted successfully`))
                 .catch((error) => {
@@ -17,7 +17,7 @@ module.exports = {
                 });
 
                 return;
-            }
+            } */
             
             channel.send(message.embeds)
             .then(console.log(`Embed from other bots moved successfully`))
