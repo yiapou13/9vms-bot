@@ -23,10 +23,6 @@ module.exports = {
             return;
         }
 
-        if ( == 'teamix') {
-
-        }
-
         // Play random track
         let clip = Math.floor(Math.random() * track);
 
