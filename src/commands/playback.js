@@ -33,7 +33,7 @@ module.exports = {
         if (connection) {
             message.delete();
             if (atLeastOneWord == 'teamix') {
-                var dispatcher = voice.connection.play(fs.createReadStream('https://drive.google.com/file/d/1Qr0mM7fQv0NMgUyjnvx-fuVbhIViAYte/view'));
+                var dispatcher = voice.connection.play('https://drive.google.com/file/d/1Qr0mM7fQv0NMgUyjnvx-fuVbhIViAYte/view');
             } else {
                 var dispatcher = voice.connection.play(fs.createReadStream('src/audio/audio' + clip + '.mp4'));
             }
