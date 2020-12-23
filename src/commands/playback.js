@@ -32,11 +32,7 @@ module.exports = {
 
         if (connection) {
             message.delete();
-            if (atLeastOneWord == 'teamix') {
-                var dispatcher = voice.connection.play('https://drive.google.com/file/d/1Qr0mM7fQv0NMgUyjnvx-fuVbhIViAYte/view');
-            } else {
-                var dispatcher = voice.connection.play(fs.createReadStream('src/audio/audio' + clip + '.mp4'));
-            }
+            const dispatcher = voice.connection.play(fs.createReadStream('src/audio/audio' + clip + '.mp4'));
 
             dispatcher.on('start', () => {
                 console.log('Clip ' + clip + ' is now playing!');
@@ -52,12 +48,7 @@ module.exports = {
             .then(connection => {
                 message.delete();
                 //message.channel.send(`Joined ${channel}.`);
-
-                if (atLeastOneWord == 'teamix') {
-                    var dispatcher = voice.connection.play(fs.createReadStream('https://drive.google.com/file/d/1Qr0mM7fQv0NMgUyjnvx-fuVbhIViAYte/view'));
-                } else {
-                    var dispatcher = voice.connection.play(fs.createReadStream('src/audio/audio' + clip + '.mp4'));
-                }
+                const dispatcher = connection.play(fs.createReadStream('src/audio/audio' + clip + '.mp4'));
 
                 dispatcher.on('start', () => {
                     console.log('Clip ' + clip + ' is now playing!');
