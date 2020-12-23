@@ -23,6 +23,10 @@ module.exports = {
             return;
         }
 
+        if ( == 'teamix') {
+
+        }
+
         // Play random track
         let clip = Math.floor(Math.random() * track);
 
@@ -32,7 +36,11 @@ module.exports = {
 
         if (connection) {
             message.delete();
-            const dispatcher = voice.connection.play(fs.createReadStream('src/audio/audio' + clip + '.mp4'));
+            if (atLeastOneWord == 'teamix') {
+                var dispatcher = voice.connection.play(fs.createReadStream('https://drive.google.com/file/d/1Qr0mM7fQv0NMgUyjnvx-fuVbhIViAYte/view'));
+            } else {
+                var dispatcher = voice.connection.play(fs.createReadStream('src/audio/audio' + clip + '.mp4'));
+            }
 
             dispatcher.on('start', () => {
                 console.log('Clip ' + clip + ' is now playing!');
@@ -48,7 +56,12 @@ module.exports = {
             .then(connection => {
                 message.delete();
                 //message.channel.send(`Joined ${channel}.`);
-                const dispatcher = connection.play(fs.createReadStream('src/audio/audio' + clip + '.mp4'));
+
+                if (atLeastOneWord == 'teamix') {
+                    var dispatcher = voice.connection.play(fs.createReadStream('https://drive.google.com/file/d/1Qr0mM7fQv0NMgUyjnvx-fuVbhIViAYte/view'));
+                } else {
+                    var dispatcher = voice.connection.play(fs.createReadStream('src/audio/audio' + clip + '.mp4'));
+                }
 
                 dispatcher.on('start', () => {
                     console.log('Clip ' + clip + ' is now playing!');
