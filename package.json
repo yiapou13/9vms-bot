@@ -1,5 +1,5 @@
 {
-  "name": "discord-tts-bot",
+  "name": "9vms-bot",
   "version": "1.2.0",
   "description": "A simple Discord TTS Bot that uses the Google Translate TTS API",
   "main": "app.js",
