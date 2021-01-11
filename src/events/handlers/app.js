@@ -37,6 +37,7 @@ const handleMessage = (message, client) => {
     // Id of MEE6 and Groovy and their prefixes
     if (message.content.startsWith("!") || message.content.startsWith("-") || message.author.id == '159985870458322944' || message.author.id == '234395307759108106') {
         const args = message.content.slice(prefix.length).trim().split(/ +/);
+        console.log(message);
       
         const options = {
           args,
