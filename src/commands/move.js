@@ -19,11 +19,20 @@ module.exports = {
                 return;
             } */
             
-            channel.send(message.embeds)
-            .then(console.log(`Embed from other bots moved successfully`))
-            .catch((error) => {
-                throw error;
-            });
+            if (message.embeds) {
+                channel.send(message.embeds)
+                .then(console.log(`Embed from other bots moved successfully`))
+                .catch((error) => {
+                    throw error;
+                });
+            } else {
+                channel.send(message)
+                .then(console.log(`Message from other bots moved successfully`))
+                .catch((error) => {
+                    throw error;
+                });
+            }
+            
         }
 
         message.delete()
