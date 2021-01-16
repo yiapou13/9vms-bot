@@ -19,7 +19,8 @@ module.exports = {
                 return;
             } */
             
-            if (options.commands == 'play') {
+            //if (options.commands == 'play') {
+            if (message.embeds) {
                 channel.send(message.embeds)
                 .then(console.log(`Embed from other bots moved successfully`))
                 .catch((error) => {
