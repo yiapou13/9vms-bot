@@ -19,14 +19,14 @@ module.exports = {
                 return;
             } */
             
-            if (message.embeds) {
+            if (message.embeds != []) {
                 channel.send(message.embeds)
                 .then(console.log(`Embed from other bots moved successfully`))
                 .catch((error) => {
                     throw error;
                 });
             } else {
-                channel.send(message)
+                channel.send(message.content)
                 .then(console.log(`Message from other bots moved successfully`))
                 .catch((error) => {
                     throw error;
