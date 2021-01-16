@@ -6,7 +6,7 @@ module.exports = {
     emoji: ':speaking_head:',
     execute(message, options) {
         const channel = message.client.channels.cache.get('789253404312600596') // id of now-playing
-        console.log(options);
+        console.log(message);
         // Id of MEE6 and Groovy
         if (message.author.id == '159985870458322944' || message.author.id == '234395307759108106') {
             /* if (message.embeds.description.includes("https://groovy.bot/premium")) {
