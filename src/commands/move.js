@@ -17,7 +17,7 @@ module.exports = {
 
                 return;
             } */
-            
+            console.log(message);
             // If content == '', play command has been issued, if content != '', queue command has been issued 
             if (message.content == '') {
                 channel.send(message.embeds)
