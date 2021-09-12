@@ -6,8 +6,8 @@ module.exports = {
     emoji: ':speaking_head:',
     execute(message, options) {
         const channel = message.client.channels.cache.get('789253404312600596') // id of now-playing
-        // Id of MEE6 and Groovy
-        if (message.author.id == '159985870458322944' || message.author.id == '234395307759108106') {
+        // Id of MEE6, Groovy, Rythm(!), Rythm(-)
+        if (message.author.id == '159985870458322944' || message.author.id == '234395307759108106' || message.author.id == '252128902418268161' || message.author.id == '235088799074484224') {
             /* if (message.embeds.description.includes("https://groovy.bot/premium")) {
                 message.delete()
                 .then(console.log(`Groovy inactivity message deleted successfully`))
