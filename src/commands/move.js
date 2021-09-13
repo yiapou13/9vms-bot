@@ -20,7 +20,7 @@ module.exports = {
                 return;
             } */
 
-            if (message.author.id == (BOTS_ID.RYTHM || BOTS_ID.RYTHM_MINUS)) {
+            if (message.author.id == BOTS_ID.RYTHM || message.author.id == BOTS_ID.RYTHM_MINUS) {
                 console.log(message);
             }
             
