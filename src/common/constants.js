@@ -85,6 +85,13 @@ const TTS_ENGINES = {
 
 const AEIOU_API_URL = 'http://tts.cyzon.us';
 
+const BOTS_ID = {
+    MEE6: '159985870458322944',
+    GROOVY: '234395307759108106', // shut down, not in use
+    RYTHM: '235088799074484224',
+    RYTHM_MINUS: '252128902418268161'
+}
+
 module.exports = {
   MAX_EMBED_FIELD_SIZE,
   TTS_MAX_CHARS,
@@ -96,4 +103,5 @@ module.exports = {
   NUMBER_EMOJI_UNICODE,
   TTS_ENGINES,
   AEIOU_API_URL,
+  BOTS_ID
 };
