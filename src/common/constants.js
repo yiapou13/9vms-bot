@@ -90,7 +90,7 @@ const BOTS_ID = {
     GROOVY: '234395307759108106', // shut down, not in use
     RYTHM: '235088799074484224',
     RYTHM_MINUS: '252128902418268161'
-}
+};
 
 module.exports = {
   MAX_EMBED_FIELD_SIZE,

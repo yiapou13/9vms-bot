@@ -9,7 +9,7 @@ module.exports = {
         const channel = message.client.channels.cache.get('789253404312600596') // id of now-playing
         // Id of MEE6, Groovy, Rythm(!), Rythm(-)
         //if (message.author.id == '159985870458322944' || message.author.id == '234395307759108106' || message.author.id == '252128902418268161' || message.author.id == '235088799074484224') {
-        if (BOTS_ID.hasOwnProperty(message.author.id)) {
+        if (Object.values(BOTS_ID).includes(message.author.id)) {
             /* if (message.embeds.description.includes("https://groovy.bot/premium")) {
                 message.delete()
                 .then(console.log(`Groovy inactivity message deleted successfully`))
@@ -19,6 +19,10 @@ module.exports = {
 
                 return;
             } */
+
+            if (message.author.id == (BOTS_ID.RYTHM || BOTS_ID.RYTHM_MINUS)) {
+                console.log(message);
+            }
             
             // If content == '', play command has been issued, if content != '', queue command has been issued 
             if (message.content == '') {
